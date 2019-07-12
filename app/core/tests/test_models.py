@@ -1,5 +1,5 @@
 from django.test import TestCase
-from  django.contrib.auth import get_user_model
+from django.contrib.auth import get_user_model
 
 
 class ModelTests(TestCase):
@@ -21,7 +21,6 @@ class ModelTests(TestCase):
 
         email = 'am823617@GMAIL.COM'
         user = get_user_model().objects.create_user(email, 'Bb13751375')
-
 
         self.assertEqual(user.email, email.lower())
 
